@@ -45,7 +45,7 @@ INSERT INTO orders (order_id, customer_id, order_date, sales) VALUES
 -- ======================================================
 -- Table: Sales.Customers
 -- ======================================================
-DROP TABLE IF EXISTS Sales.Customers;
+DROP TABLE IF EXISTS SalesCustomers;
 
 CREATE TABLE SalesCustomers (
     CustomerID INT NOT NULL,
@@ -63,7 +63,7 @@ INSERT INTO SalesCustomers VALUES
     (5, 'Anna',   'Adams',    'USA',     NULL);
 
 -- ======================================================
--- Table: Sales.Employees
+-- Table: SalesEmployees
 -- ======================================================
 DROP TABLE IF EXISTS SalesEmployees;
 
@@ -86,7 +86,7 @@ INSERT INTO SalesEmployees VALUES
     (5, 'Carol',   'Baker',  'Sales',     '1982-02-11', 'F', 55000, 3);
 
 -- ======================================================
--- Table: Sales.Products
+-- Table: SalesProducts
 -- ======================================================
 DROP TABLE IF EXISTS SalesProducts;
 
@@ -105,7 +105,7 @@ INSERT INTO SalesProducts (ProductID, Product, Category, Price) VALUES
     (105, 'Gloves', 'Clothing',    30);
 
 -- ======================================================
--- Table: Sales.Orders
+-- Table: SalesOrders
 -- ======================================================
 DROP TABLE IF EXISTS SalesOrders;
 
@@ -137,7 +137,7 @@ INSERT INTO SalesOrders VALUES
     (10, 102, 3, 5, '2025-03-15', '2025-03-20', 'Shipped',   NULL,                  NULL,           0, 60, '2025-03-16T23:25:15');
 
 -- ======================================================
--- Table: Sales.OrdersArchive
+-- Table: SalesOrdersArchive
 -- ======================================================
 DROP TABLE IF EXISTS SalesOrdersArchive;
 
